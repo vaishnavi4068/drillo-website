@@ -41,7 +41,6 @@ const HowWeWork = () => {
                 <p className="text-base">{card.description}</p>
               </div>
 
-              {/* Static space reserved for hover content */}
               <div className="mt-6 overflow-hidden h-0 group-hover:h-6 transition-all duration-500 ease-in-out">
                 <div className="flex items-center font-semibold">
                   View more <ArrowRight className="ml-2 w-4 h-4" />

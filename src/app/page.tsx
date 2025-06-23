@@ -4,6 +4,8 @@ import React from 'react'
 import HowWeWork from '@/components/HowWeWork'
 import Solutions from '@/components/Solutions'
 import Services from '@/components/Services'
+import CoreValues from '@/components/CoreValues'
+import ConnectWithUs from '@/components/ConnectWithUs'
 
 const page = () => {
   return (
@@ -13,6 +15,8 @@ const page = () => {
       <HowWeWork />
       <Solutions />
       <Services />
+      <CoreValues />
+      <ConnectWithUs />
     </div>
   )
 }
