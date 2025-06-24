@@ -5,10 +5,10 @@ import { usePathname } from 'next/navigation';
 
 const Header = () => {
   const pathname = usePathname();
-  
+
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Services', path: '#services' },
+    { name: 'Services', path: '/services' },
     { name: 'About Us', path: '/about' },
     { name: 'Contact', path: '/contact' },
     { name: 'Career', path: '/career' },
@@ -22,7 +22,7 @@ const Header = () => {
         <nav className="flex space-x-8">
           {navItems.map((item) => {
             const isActive = pathname === item.path;
-            
+
             return (
               <Link key={item.name} href={item.path}>
                 <span

@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Solutions = () => {
   return (
-    <section className="w-full h-[80%] py-20 px-4 bg-[#dcefef]">
+    <section className="w-full h-[80vh] py-20 px-4 bg-[#dcefef]">
       <div className="max-w-7xl h-[80%] mx-auto text-center">
         {/* Heading */}
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-14">
@@ -18,7 +18,7 @@ const Solutions = () => {
           <div className="relative w-full md:w-1/2">
             <div className="rounded-xl overflow-hidden w-[80%]">
               <Image
-                src="/team-stack-top.jpg" // ✅ Replace with your actual image path
+                src="/team-stack-top.jpg"
                 alt="Teamwork"
                 width={200}
                 height={200}
@@ -27,7 +27,7 @@ const Solutions = () => {
             </div>
             <div className="absolute left-24 top-[50%] w-[80%] rounded-xl overflow-hidden shadow-lg hidden md:block">
               <Image
-                src="/team-stack-bottom.webp" // ✅ Replace with your actual image path
+                src="/team-stack-bottom.webp"
                 alt="Meeting"
                 width={200}
                 height={200}
