@@ -12,32 +12,24 @@ const HeroSection = () => {
               <Image
                 src="/images/home.png"
                 alt="Phone mockup 1"
-                className="rounded-3xl shadow-2xl border-4 border-black"
+                className="rounded-3xl shadow-2xl border-4 border-black -translate-y-5"
                 width={240}
                 height={520}
                 priority
-                style={{
-                  objectFit: 'cover',
-                  transform: 'translateY(-20px)'
-                }}
               />
             </div>
             <div className="relative">
               <Image
                 src="/images/program_details.png"
                 alt="Phone mockup 2"
-                className="rounded-3xl shadow-2xl border-4 border-black"
+                className="rounded-3xl shadow-2xl border-4 border-black translate-y-5"
                 width={240}
                 height={520}
                 priority
-                style={{
-                  objectFit: 'cover',
-                  transform: 'translateY(20px)'
-                }}
               />
             </div>
           </div>
-                     
+                             
           {/* Right: Text Content */}
           <div className="flex flex-col items-start max-w-xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight">

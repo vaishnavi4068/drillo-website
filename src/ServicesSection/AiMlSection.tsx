@@ -18,19 +18,7 @@ const AiMlSection = () => {
           </div>
           
           {/* Right: Scrollable Content */}
-          <div 
-            className="overflow-y-auto max-h-[600px] lg:pr-8 space-y-12" 
-            style={{
-              scrollbarWidth: 'none',
-              msOverflowStyle: 'none',
-            }}
-          >
-            <style jsx>{`
-              div::-webkit-scrollbar {
-                display: none;
-              }
-            `}</style>
-
+          <div className="overflow-y-auto max-h-[600px] lg:pr-8 space-y-12 scrollbar-hide">
             {/* First Card - Artificial Intelligence */}
             <div className="bg-white rounded-3xl shadow-sm overflow-hidden border border-gray-100">
               <div className="p-8">
