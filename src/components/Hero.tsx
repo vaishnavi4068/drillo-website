@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="w-full min-h-4/5 flex items-center justify-center text-center px-4 bg-[#0c4f5b]">
+    <section className="w-full h-[80vh] flex items-center justify-center text-center px-4 bg-[#0c4f5b]">
       <div className="max-w-3xl">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
           Unlock the Power of AI
