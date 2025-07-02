@@ -1,17 +1,66 @@
+'use client';
+
+import React from 'react';
+import { ArrowRight } from 'lucide-react';
+
+const cardData = [
+  {
+    title: 'For Partners',
+    description:
+      'We craft superior digital and AI-driven experiences to drive meaningful business impact.',
+  },
+  {
+    title: 'For Founders',
+    description:
+      'We help founders rapidly build and scale with AI-driven digital experiences.',
+  },
+  {
+    title: 'For Enterprise',
+    description:
+      'Tailored enterprise AI solutions that unlock efficiency and innovation.',
+  },
+];
+
 const Hero = () => {
   return (
-    <section className="w-full h-[80vh] flex items-center justify-center text-center px-4 bg-[#0c4f5b]">
-      <div className="max-w-3xl">
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-          Unlock the Power of AI
-        </h1>
-        <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-          Lorem ipsum dolor sit amet consectetur. Non arcu dui eget viverra. Lorem ipsum dolor sit amet consectetur.
-          Lorem ipsum dolor sit amet consectetur. Non arcu dui eget.
-        </p>
-        <button className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-6 py-3 rounded-md transition">
-          Let’s Discuss
-        </button>
+    <section className="w-full h-screen bg-[#0c4f5b] text-white flex items-center justify-center px-4 ">
+      <div className="max-w-7xl w-full text-center flex flex-col items-center space-y-12 gap-20">
+        {/* Hero Content */}
+        <div className="max-w-3xl">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4">
+            Unlock the Power of AI
+          </h1>
+          <p className="text-base md:text-lg text-gray-300 mb-6 leading-relaxed">
+            Empower your business with intelligent, scalable digital solutions.
+          </p>
+          <button className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-6 py-3 rounded-md transition">
+            Let’s Discuss
+          </button>
+        </div>
+
+        <div className="w-full mx-auto">
+          <h2 className="text-2xl md:text-4xl font-bold mb-6">How we Work</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+            {cardData.map((card, index) => (
+              <div
+                key={index}
+                className="group relative bg-white text-gray-900 border border-gray-200 shadow-md rounded-xl p-8 flex flex-col justify-between transition-all duration-500 ease-in-out cursor-pointer min-h-[250px] hover:min-h-[300px]"
+              >
+                <div>
+                  <p className="text-lg font-medium mb-2">We work</p>
+                  <p className="flex items-center justify-center mb-4 gap-4"><h2 className="text-2xl md:text-3xl font-bold">{card.title}</h2> <ArrowRight className="ml-2 w-6 h-6 group-hover:translate-x-7 group-hover:-rotate-45 border-2 border-black-500 rounded-full transition-all duration-500 ease-in-out" /></p>
+                  <p className="text-base">{card.description}</p>
+                </div>
+
+                <div className="mt-6 overflow-hidden transition-all duration-500 ease-in-out max-h-0 group-hover:max-h-6">
+                  <div className="flex items-center font-semibold">
+                    View more
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

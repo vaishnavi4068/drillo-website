@@ -10,7 +10,7 @@ const page = () => {
   return (
     <div className=''>
       <Hero />
-      <HowWeWork />
+      {/* <HowWeWork /> */}
       <Solutions />
       <Services />
       <CoreValues />

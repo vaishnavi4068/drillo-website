@@ -1,13 +1,13 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 const Header = () => {
   const pathname = usePathname();
-
+  const router = useRouter();
   const navItems = [
-    { name: 'Home', path: '/' },
+    // { name: 'Home', path: '/' },
     { name: 'Services', path: '/services' },
     { name: 'About Us', path: '/about' },
     { name: 'Contact', path: '/contact' },
@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <header className="fixed w-full top-0 z-50 backdrop-blur-sm bg-black/60 shadow-lg">
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <h1 className="text-white py-4 font-extrabold text-2xl">Drillo</h1>
+        <h1 className="text-white py-4 font-extrabold text-2xl cursor-pointer" onClick={() => router.push('/')}>Drillo</h1>
 
         <nav className="flex space-x-8">
           {navItems.map((item) => {
