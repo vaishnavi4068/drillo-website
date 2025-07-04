@@ -4,45 +4,41 @@ import React from 'react';
 const Founders = ({ imagePath = "/images/block.avif", imageAlt = "Block illustration" }) => {
   return (
     <>
-      <section id='services' className="w-full bg-white py-16 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[600px]">
-            
-            {/* Left Content */}
-            <div className="space-y-8 lg:pr-8">
-              <div>
-                <h1 className="text-5xl lg:text-6xl font-bold text-teal-700 mb-8 leading-tight">
-                  Build With Us
-                </h1>
-                
-                <h2 className="text-xl lg:text-2xl font-semibold text-teal-800 mb-6 leading-relaxed">
-                  We partner with entrepreneurs to create the great AI companies of tomorrow.
-                </h2>
-                
-                <p className="text-base lg:text-lg text-gray-700 leading-relaxed mb-8">
-                  Building a startup is hard. From startup veterans and seasoned investors, to 
-                  machine learning experts and talent leaders, our team is ready to fill in the gaps 
-                  around your expertise. We are here to support you so your company succeeds.
-                </p>
-              </div>
+      <section id='services' className="w-full bg-white py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center min-h-[400px] lg:gap-24 gap-8">
+          
+          {/* Left Content - With More Left Padding */}
+          <div className="pl-16 lg:pl-32 xl:pl-48 space-y-8">
+            <div className="max-w-2xl">
+              <h1 className="text-5xl lg:text-6xl font-bold text-teal-700 mb-8 leading-tight">
+                Build With Us
+              </h1>
               
-              <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold text-sm lg:text-base px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg uppercase tracking-wide">
-                LET'S BUILD TOGETHER
-              </button>
-            </div>
-
-            {/* Right Image */}
-            <div className="flex justify-center lg:justify-end items-center">
-              <div className="relative w-full max-w-md">
-                <img 
-                  src={imagePath} 
-                  alt={imageAlt}
-                  className="w-full h-auto rounded-lg shadow-lg object-cover"
-                />
-              </div>
+              <h2 className="text-xl lg:text-2xl font-semibold text-teal-800 mb-6 leading-relaxed">
+                We partner with entrepreneurs to create the great AI companies of tomorrow.
+              </h2>
+              
+              <p className="text-base lg:text-lg text-gray-700 leading-relaxed mb-8">
+                Building a startup is hard. From startup veterans and seasoned investors, to 
+                machine learning experts and talent leaders, our team is ready to fill in the gaps 
+                around your expertise. We are here to support you so your company succeeds.
+              </p>
             </div>
             
+            <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold text-sm lg:text-base px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg uppercase tracking-wide">
+              LET'S BUILD TOGETHER
+            </button>
           </div>
+
+          {/* Right Image - Edge to Edge */}
+          <div className="w-full h-full lg:pr-0 overflow-hidden">
+            <img 
+              src={imagePath} 
+              alt={imageAlt}
+              className="w-full h-[150px] lg:h-[500px] object-cover rounded-none m-0 p-0"
+            />
+          </div>
+          
         </div>
       </section>
 

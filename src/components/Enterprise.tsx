@@ -4,10 +4,10 @@ import React from 'react';
 const Enterprise = ({ imagePath = "/images/partner.jpg", imageAlt = "Hands placing puzzle pieces together" }) => {
   return (
     <section className="w-full bg-white py-16">
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-center min-h-[400px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center min-h-[400px] lg:gap-24 gap-8">
         
-        {/* Left Content - With Left Padding */}
-        <div className="pl-8 lg:pl-8 xl:pl-16 space-y-8">
+        {/* Left Content - With More Left Padding */}
+        <div className="pl-16 lg:pl-32 xl:pl-48 space-y-8">
           <div className="max-w-2xl">
             <h1 className="text-4xl lg:text-5xl font-bold text-blue-600 mb-8 leading-tight">
               You Have An Idea. We Help You Launch It As A New Company.
@@ -29,12 +29,12 @@ const Enterprise = ({ imagePath = "/images/partner.jpg", imageAlt = "Hands placi
           </button>
         </div>
 
-        {/* Right Image - Smaller size */}
-        <div className="w-full h-full">
+        {/* Right Image - Edge to Edge */}
+        <div className="w-full h-full lg:pr-0 overflow-hidden">
           <img 
             src={imagePath}
             alt={imageAlt}
-            className="w-full h-[150px] lg:h-[500px] object-cover"
+            className="w-full h-[150px] lg:h-[500px] object-cover rounded-none m-0 p-0"
           />
         </div>
         
