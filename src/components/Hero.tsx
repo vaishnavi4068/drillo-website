@@ -34,7 +34,7 @@ const Hero = () => {
             Empower your business with intelligent, scalable digital solutions.
           </p>
           <button className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-6 py-3 rounded-md transition">
-            Let’s Discuss
+            Let's Discuss
           </button>
         </div>
 
@@ -45,6 +45,27 @@ const Hero = () => {
               <div
                 key={index}
                 className="group relative bg-white text-gray-900 border border-gray-200 shadow-md rounded-xl p-8 flex flex-col justify-between transition-all duration-500 ease-in-out cursor-pointer min-h-[250px] hover:min-h-[300px]"
+                onClick={() => {
+                  if (card.title === 'For Partners') {
+                    const el = document.getElementById('partners');
+                    if (el) {
+                      const y = el.getBoundingClientRect().top + window.pageYOffset - 20; // 20px offset from top
+                      window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
+                  } else if (card.title === 'For Founders') {
+                    const el = document.getElementById('services');
+                    if (el) {
+                      const y = el.getBoundingClientRect().top + window.pageYOffset - 20; // 20px offset from top
+                      window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
+                  } else if (card.title === 'For Enterprise') {
+                    const el = document.getElementById('enterprise');
+                    if (el) {
+                      const y = el.getBoundingClientRect().top + window.pageYOffset - 20; // 20px offset from top
+                      window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
+                  }
+                }}
               >
                 <div>
                   <p className="text-lg font-medium mb-2">We work</p>
