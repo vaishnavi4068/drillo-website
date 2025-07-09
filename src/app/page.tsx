@@ -7,6 +7,8 @@ import CoreValues from '@/components/CoreValues'
 import Founders from '@/components/Founders'
 import Partners from '@/components/Partners'
 import Enterprise from '@/components/Enterprise'
+import PortfolioSection from '@/components/PortfolioSection'
+import BlogSection from '@/components/BlogSection'
 
 const page = () => {
   return (
@@ -17,6 +19,8 @@ const page = () => {
       <Founders />
       <Partners />
       <Enterprise />
+      <PortfolioSection />
+      <BlogSection />
       <CoreValues />
       <ConnectWithUs />
     </div>

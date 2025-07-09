@@ -4,7 +4,7 @@ import React from 'react';
 const Partners = ({ imagePath = "/images/puzzle.jpg", imageAlt = "Hands placing puzzle pieces together" }) => {
   return (
     <>
-      <section className="w-full bg-white py-16">
+      <section id="partners" className="w-full bg-white py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center min-h-[400px] lg:gap-24 gap-8">
           
           {/* Left Content - With More Left Padding */}
