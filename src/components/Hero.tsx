@@ -23,8 +23,20 @@ const cardData = [
 
 const Hero = () => {
   return (
-    <section className="w-full h-screen bg-[#0c4f5b] text-white flex items-center justify-center px-4 ">
-      <div className="max-w-7xl w-full text-center flex flex-col items-center space-y-12 gap-20">
+    <section className="w-full min-h-screen text-white flex items-center justify-center px-4 relative overflow-hidden">
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      >
+        <source src="/bg_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div className="max-w-7xl w-full text-center flex flex-col items-center space-y-12 gap-20 relative z-20">
         {/* Hero Content */}
         <div className="max-w-3xl">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
@@ -69,7 +81,7 @@ const Hero = () => {
               >
                 <div>
                   <p className="text-lg font-medium mb-2">We work</p>
-                  <p className="flex items-center justify-center mb-4 gap-4"><h2 className="text-2xl md:text-3xl font-bold">{card.title}</h2> <ArrowRight className="ml-2 w-6 h-6 group-hover:translate-x-7 group-hover:-rotate-45 border-2 border-black-500 rounded-full transition-all duration-500 ease-in-out" /></p>
+                  <h2 className="flex items-center justify-center mb-4 gap-4"><p className="text-2xl md:text-3xl font-bold">{card.title}</p> <ArrowRight className="ml-2 w-6 h-6 group-hover:translate-x-7 group-hover:-rotate-45 border-2 border-black-500 rounded-full transition-all duration-500 ease-in-out" /></h2>
                   <p className="text-base">{card.description}</p>
                 </div>
 
