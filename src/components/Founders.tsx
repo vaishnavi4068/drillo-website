@@ -4,28 +4,34 @@ import React from 'react';
 const Founders = ({ imagePath = "/images/block.avif", imageAlt = "Block illustration" }) => {
   return (
     <>
-      <section id='services' className="w-full bg-white py-16">
+      <section id='services' className="w-full bg-white py-16 pt-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center min-h-[400px] lg:gap-24 gap-8">
           
           {/* Left Content - With More Left Padding */}
           <div className="pl-16 lg:pl-32 xl:pl-48 space-y-8">
             <div className="max-w-2xl">
-              <h1 className="text-5xl lg:text-6xl font-bold text-teal-700 mb-8 leading-tight">
-                Build With Us
+              <h1 className="text-3xl lg:text-3xl font-bold text-slate-800 mb-8 leading-tight">
+              Not Just a Head Start — A Smart Start
               </h1>
               
-              <h2 className="text-xl lg:text-2xl font-semibold text-teal-800 mb-6 leading-relaxed">
-                We partner with entrepreneurs to create the great AI companies of tomorrow.
+              <h2 className="text-md lg:text-lg font-semibold text-slate-700 mb-6 leading-relaxed">
+              We’ve built AI products from scratch, scaled early-stage teams, and taken startups from napkin sketches to working systems and working systems to smarter systems. We know what it really takes to turn vision into velocity — especially when you’re building with AI.
+              That’s why we created Drillo Launch Studio — to give early-stage founders the strategy,speed, structure, and execution power they need to launch smarter 
               </h2>
               
               <p className="text-base lg:text-lg text-gray-700 leading-relaxed mb-8">
-                Building a startup is hard. From startup veterans and seasoned investors, to 
-                machine learning experts and talent leaders, our team is ready to fill in the gaps 
-                around your expertise. We are here to support you so your company succeeds.
+              This isn’t theory. It’s traction.
+              You bring the ambition. We bring the build.
+
+              </p>
+              <p className="text-base lg:text-lg text-gray-700 leading-relaxed mb-8">
+              Drillo Launch Studio helps founders go from first idea to fully working AI product, fast.
+              We bring the strategy, structure, and deep execution it takes to build what matters — not just ship demos.
+              Because in this game, speed is survival — but smart speed wins.
               </p>
             </div>
             
-            <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold text-sm lg:text-base px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg uppercase tracking-wide">
+            <button className="bg-cyan-400 hover:bg-lime-400 text-white font-bold text-sm lg:text-base px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg uppercase tracking-wide">
               LET'S BUILD TOGETHER
             </button>
           </div>

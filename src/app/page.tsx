@@ -9,6 +9,7 @@ import Partners from '@/components/Partners'
 import Enterprise from '@/components/Enterprise'
 import PortfolioSection from '@/components/PortfolioSection'
 import BlogSection from '@/components/BlogSection'
+import SupportForm from '@/components/SupportForm'
 
 const page = () => {
   return (
@@ -22,6 +23,7 @@ const page = () => {
       <PortfolioSection />
       <BlogSection />
       <CoreValues />
+      <SupportForm />
       <ConnectWithUs />
     </div>
   )
