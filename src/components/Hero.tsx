@@ -10,9 +10,14 @@ const cardData = [
       'We craft superior digital and AI-driven experiences to drive meaningful business impact.',
   },
   {
-    title: 'For Founders',
+    title: 'For Founders and Startups',
     description:
       'We help founders rapidly build and scale with AI-driven digital experiences.',
+  },
+  {
+    title: 'For Scaleups',
+    description:
+      'We accelerate growth for scaling companies with advanced AI solutions and strategic digital transformation.',
   },
   {
     title: 'For Enterprise',
@@ -52,41 +57,50 @@ const Hero = () => {
 
         <div className="w-full mx-auto">
           <h2 className="text-2xl md:text-4xl font-bold mb-6">How we Work</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
             {cardData.map((card, index) => (
               <div
                 key={index}
-                className="group relative bg-white text-gray-900 border border-gray-200 shadow-md rounded-xl p-8 flex flex-col justify-between transition-all duration-500 ease-in-out cursor-pointer min-h-[250px] hover:min-h-[300px]"
+                className="group relative bg-white text-gray-900 border border-gray-200 shadow-md rounded-xl p-6 flex flex-col justify-between transition-all duration-500 ease-in-out cursor-pointer h-[300px] hover:h-[340px]"
                 onClick={() => {
                   if (card.title === 'For Partners') {
                     const el = document.getElementById('partners');
                     if (el) {
-                      const y = el.getBoundingClientRect().top + window.pageYOffset - 20; // 20px offset from top
+                      const y = el.getBoundingClientRect().top + window.pageYOffset - 20;
                       window.scrollTo({ top: y, behavior: 'smooth' });
                     }
-                  } else if (card.title === 'For Founders') {
+                  } else if (card.title === 'For Founders and Startups') {
                     const el = document.getElementById('services');
                     if (el) {
-                      const y = el.getBoundingClientRect().top + window.pageYOffset - 20; // 20px offset from top
+                      const y = el.getBoundingClientRect().top + window.pageYOffset - 20;
+                      window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
+                  } else if (card.title === 'For Scaleups') {
+                    const el = document.getElementById('scaleups');
+                    if (el) {
+                      const y = el.getBoundingClientRect().top + window.pageYOffset - 20;
                       window.scrollTo({ top: y, behavior: 'smooth' });
                     }
                   } else if (card.title === 'For Enterprise') {
                     const el = document.getElementById('enterprise');
                     if (el) {
-                      const y = el.getBoundingClientRect().top + window.pageYOffset - 20; // 20px offset from top
+                      const y = el.getBoundingClientRect().top + window.pageYOffset - 20;
                       window.scrollTo({ top: y, behavior: 'smooth' });
                     }
                   }
                 }}
               >
-                <div>
+                <div className="flex-1 flex flex-col">
                   <p className="text-lg font-medium mb-2">We work</p>
-                  <h2 className="flex items-center justify-center mb-4 gap-4"><p className="text-2xl md:text-3xl font-bold">{card.title}</p> <ArrowRight className="ml-2 w-6 h-6 group-hover:translate-x-7 group-hover:-rotate-45 border-2 border-black-500 rounded-full transition-all duration-500 ease-in-out" /></h2>
-                  <p className="text-base">{card.description}</p>
+                  <h2 className="flex items-center justify-center mb-4 gap-3">
+                    <p className="text-xl md:text-2xl font-bold text-center leading-tight">{card.title}</p> 
+                    <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-7 group-hover:-rotate-45 border-2 border-black-500 rounded-full transition-all duration-500 ease-in-out flex-shrink-0" />
+                  </h2>
+                  <p className="text-sm leading-relaxed">{card.description}</p>
                 </div>
 
-                <div className="mt-6 overflow-hidden transition-all duration-500 ease-in-out max-h-0 group-hover:max-h-6">
-                  <div className="flex items-center font-semibold">
+                <div className="mt-4 overflow-hidden transition-all duration-500 ease-in-out max-h-0 group-hover:max-h-12">
+                  <div className="flex items-center justify-center font-semibold text-cyan-600 pt-3 border-t border-gray-200">
                     View more
                   </div>
                 </div>
